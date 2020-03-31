@@ -6,9 +6,9 @@ function onOff(){
     document
         .querySelector("body")
         .classList
-        .toggle("hideScrool")
+        .toggle("hideScroll")
     document
         .querySelector("#modal")
         .classList
-        .toggle("addScrool")    
+        .toggle("addScroll")    
 }

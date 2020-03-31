@@ -1,3 +1,4 @@
+/*global*/
 body{
     background: #e5e5e5;
     color:#25282b;
@@ -7,7 +8,7 @@ body{
     margin: 0;
 }
 
-body.hideScrool {
+body.hideScroll {
     overflow: hidden;
 }
 
@@ -27,6 +28,32 @@ p, .description{
     letter-spacing: 0.1px;
 }
 
+.button {
+    color: white;
+    background: #ff5e84;
+
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    box-shadow:  0px 8px 16px #ff5e8432;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+
+.button:hover{
+    text-decoration: none;
+    background-color: #0984e3;
+}
+
+/*padrão*/
+
 #container{
     width: 90%;
     max-width: 980px;
@@ -36,7 +63,7 @@ p, .description{
 
 #intro{
     width: 300px;
-    margin-right: 20px;
+    margin-right: 64px;
 }
 
 main{
@@ -73,19 +100,7 @@ button:hover{
     text-decoration: underline;
 }
 
-button.fat {
-    color: white;
-    background: #ff5e84;
 
-    width: 150px;
-    height: 40px;
-    border-radius: 6px;
-    box-shadow:  0px 8px 16px #ff5e8432;
-}
-
-button.fat:hover{
-    text-decoration: none;
-}
 
 footer{
     text-align: center;
@@ -150,12 +165,12 @@ footer a{
     justify-content: center;
 
 }
-#modal.addScrool {
+#modal.addScroll {
     overflow: auto;
 }
 
 #modal .content {
-    margin-top: 128px;
+    margin-top: 1%;
     color: white;
 
 }
@@ -168,7 +183,7 @@ footer a{
 #modal form{
     width: 80%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 15%;
 
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -279,40 +294,15 @@ form button:hover{
 
 #page-ideas nav li a{
     color: #25282b;
-    text-decoration:none;
 }
 
-#page-ideas nav li a:hover{
-    color: #25282b;
-    text-decoration:underline;
-}
+#page-ideas nav li a.button{
+    color: white;
+}  
 
 #page-ideas nav li:last-child{
     margin: 0;
    
-}
-
-#page-ideas nav li:last-child a{
-    width: 150px;
-    height: 40px;
-
-    background-color: #ff5e84;
-    
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 8px;
-
-}
-
-#page-ideas nav li:last-child a:hover{
-    background-color: #0984e3;
-    text-decoration: none;
 }
 
 section#title {
