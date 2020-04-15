@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ideias - Casa Criativa</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-ideas">
+    <div id="container">
+        <header>
+            <a href="/">
+                <img src="/logo.png" alt="Imagem da logomarca">
+            </a>
+            <nav>
+                <li><a href="/">Início</a></li>
+                <li><a class='button'href="#" onclick='onOff()'>Nova Ideia</a></li>
+            </nav>
+        </header>
+        <section id="title">
+            <p>Em exibição</p>
+            <h1>Ideias</h1>
+        </section>
+        <main>
+            <section id="ideas">
+                {% include "all_ideas.html" %}
+            </section>
+        </main>
+        <footer>
+            <p id="footer">Com ❤ <a href="https://www.facebook.com/matheus.scheunemann.7?ref=bookmarks" target="blank">Math</a> </p>
+        </footer>
+
+    </div>
+    {% include "modal.html" %}
+    <script src="script.js"></script> 
+</body>
+</html>

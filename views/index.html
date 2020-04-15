@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- Responsável por receber configurações da página -->
+        <title>Casa Criativa</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <!-- Responsável por receber configurações da página -->
+        <div id="container">
+            <section id="intro">
+                <header>
+                    <a href="/">
+                        <img src="/logo.png" alt="Imagem da logomarca">
+                    </a>
+                </header>
+                <main>
+                    <p>
+                        Ficar em casa em perídos longos, não deve ser nada fácil.  
+                    </p>
+                    <p>
+                        Por isso, iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, livros, cursos, dicas </strong> e tudo que for necessário para tornar esse momento mais interessante.
+                    </p>
+                    <p>
+                        Comece clicando em ver ideias para ver as ideias cadastradas e contribua adicionado a sua ideia.
+                    </p>
+                </main>
+                <section id="buttons">
+                    <button onclick="onOff()">+ Adicionar idéia</button>
+                    <a href="/ideias" class="button">Ver idéias</a>
+                </section>
+                <footer>
+                    <p id="footer">Com ❤ <a href="https://www.facebook.com/matheus.scheunemann.7?ref=bookmarks" target="black">Math</a> </p>
+                </footer>     
+            </section>
+
+            <section id="last-ideas">
+                {% include "all_ideas.html" %}
+            </section>
+        </div>
+
+        <!--Modal-->
+        {% include "modal.html" %}
+        
+        <script src="/script.js"></script>       
+    </body>
+</html>
